@@ -1,20 +1,15 @@
 #include <stdio.h>
-#include<conio.h>
-void main()
+int main()
 {
-  char ch;
- clrscr();
-  printf("Input a character\n");
-  scanf("%c", &ch);
- 
-  if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' &&ch <= 'Z')) {
-    if (ch=='a' || ch=='A' || ch=='e' || ch=='E' || ch=='i' || ch=='I' || ch=='o' || ch=='O' || ch== 'u' || ch=='U')
-      printf("%c is a vowel.\n", ch);
+    char c;
+    printf("Enter a character: ");
+    scanf("%c",&c);
+
+    if( (c>='a' && c<='z') || (c>='A' && c<='Z'))
+        printf("%c is an alphabet.",c);
     else
-      printf("%c is a consonant.\n", ch);
-  }
-  else
-    printf("%c is neither a vowel nor a consonant.\n", ch);
- 
-  getch();
+        printf("%c is not an alphabet.",c);
+
+    return 0;
 }
+
