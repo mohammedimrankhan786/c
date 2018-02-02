@@ -1,7 +1,9 @@
 #include <stdio.h>
-int main()
+#include<conio.h>
+void main()
 {
     char c;
+    clrscr();
     printf("Enter a character: ");
     scanf("%c",&c);
 
@@ -10,6 +12,6 @@ int main()
     else
         printf("%c is not an alphabet.",c);
 
-    return 0;
+    getch();
 }
 
