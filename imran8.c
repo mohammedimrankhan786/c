@@ -1,18 +1,28 @@
-#include <stdio.h>
+
+#include<bits/stdc++.h>
 #include<conio.h>
 void main()
+
+ 
+void kLargest(int arr[], int n, int k)
 {
-    int n, i, sum = 0;
-    
-    printf("Enter a positive integer: ");
-    scanf("%d",&n);
-
-    for(i=1; i <= n; ++i)
-    {
-        sum += i;   // sum = sum+i;
-    }
-
-    printf("Sum = %d",sum);
-
-    getch();
+  
+   
+    sort(arr, arr+n, greater<int>());
+ 
+  
+    for (int i = 0; i < k; i++)
+        cout << arr[i] << " ";
 }
+ 
+
+int main()
+{
+    int arr[] = {1, 23, 12, 9, 30, 2, 50};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    int k = 3;
+    kLargest(arr, n, k);
+}
+ grtch();
+}
+
