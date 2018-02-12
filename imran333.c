@@ -5,7 +5,7 @@ void main()
   int countch=0;
   int countwd=1;
 
-  printf("Enter your sentence in lowercase: ");
+  printf("Enter your sentence in lowercase ");
   char ch='a';
   while(ch!='\r')
   {
