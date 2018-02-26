@@ -1,18 +1,18 @@
 
 
 
+
 #include <stdio.h>
 #include<string.h>
 int main()
 {
-   int x,y,t;
-    printf("enter the three values");
+   int x,y;
    scanf("%d %d",&x,&y);
    if(a!=0)
    {
-       t=x;
-       x=y;
-       y=t;
+       x=x^y;
+      y=y^x;
+     
    }
    printf("%d %d",x,y);
     return 0;
