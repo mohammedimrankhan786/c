@@ -1,20 +1,19 @@
 
-
 #include<stdio.h>
 #include<conio.h>
-int main()
+void main()
 {
-int n;
-scanf("%d",&n);
-if(n%7==0)
+int n,m,i,diff;
+scanf("%d %d",&n,&m);
+diff=abs(n-m);
+if(diff%2==0)
 {
-printf("\nyes");
+    printf("even");
 }
 else
 {
-printf("\nNo");
+    printf("odd");
 }
-return 0;
 }
 getch();
 }
