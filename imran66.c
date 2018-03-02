@@ -1,4 +1,5 @@
 #include <stdio.h> 
+#include<conio.h>
 
 main() {
   int n, i, c = 0;
@@ -18,4 +19,6 @@ main() {
   printf("n is not a Prime number");
   }
   return 0;    
+}
+getch();
 }
